@@ -1,0 +1,447 @@
+.box {
+    display: flex;
+    position: absolute;
+    top: 75%;
+    user-select: none;
+    right: 0;
+    transform: translate(-15%, -60%);
+    width: 434px;
+    height: 596px;
+}
+
+.box .calculette-container {
+    position: fixed;
+    width: 438px;
+    height: 596px;
+    top: 0;
+    left: 0;
+}
+
+.box .overlap-group {
+    position: relative;
+    width: 434px;
+    height: 596px;
+    background-color: #191919;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box .overlap {
+    position: absolute;
+    width: 387px;
+    height: 139px;
+    top: 32px;
+    left: 23px;
+    background-color: #5b7e59;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.box .text-wrapper {
+    position: absolute;
+    width: 187px;
+    top: 44px;
+    left: 17px;
+    font-family: "Inter-Regular", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.box .div {
+    position: absolute;
+    width: 212px;
+    top: 185px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.box .text-wrapper:empty::after {
+    content: '|'; 
+    color: #ffffff;
+    font-size: 48px;
+    animation: blink 0.8s step-end infinite; 
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.box .black-btn {
+    position: absolute;
+    color: white;
+    width: 391px;
+    height: 54px;
+    top: 266px;
+    left: 19px;
+}
+
+
+.box .mc-btn, .box .supp-btn, .box .diviser-btn, .box .fois-btn {
+    position: absolute;
+    width: 89px;
+    height: 54px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.box .mc-btn:hover, .box .supp-btn:hover, .box .diviser-btn:hover, .box .fois-btn:hover {
+    background-color: #4caf50;  
+    transform: scale(1.05);  
+}
+
+
+
+.box .mc-btn {
+    border: none;
+    background-color: #414141;
+    top: 0;
+    left: 0;
+}
+
+.box .supp-btn {
+    border: none;
+    background-color: #414141;
+    top: 0;
+    left: 101px;
+}
+
+.box .diviser-btn {
+    border: none;
+    background-color: #414141;
+    top: 0;
+    left: 201px;
+}
+
+.box .fois-btn {
+    border: none;
+    background-color: #414141;
+    top: 0;
+    left: 302px;
+}
+
+.box .btn-1, .box .btn-2, .box .btn-3, .box .btn-4, .box .btn-5, .box .btn-6, .box .btn-7, .box .btn-8, .box .btn-9, .box .btn-0 {
+    position: absolute;
+    width: 89px;
+    height: 54px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.box .btn-1:hover, .box .btn-2:hover, .box .btn-3:hover, .box .btn-4:hover, .box .btn-5:hover, .box .btn-6:hover, .box .btn-7:hover, .box .btn-8:hover, .box .btn-9:hover {
+    background-color: #4caf50; 
+    transform: scale(1.1); 
+}
+
+.arrowImage {
+    height: 25px;
+}
+
+.box .btn-0 {
+    position: absolute;
+    width: 295px;
+    color: white;
+    height: 54px;
+    top: 89%;
+    left: 4.1%;
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box .btn-0:hover {
+    background-color: #4caf50;
+    transform: scale(1.05);
+}
+
+.box .btn-moins, .box .btn-plus {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 55.8%;
+    left: 321px;
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.box .btn-moins:hover, .box .btn-plus:hover {
+    background-color: #f44336;  
+    transform: scale(1.05);
+}
+
+.box .mc-btn {
+    position: absolute;
+    width: 89px;
+    height: 54px;
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.box .supp-btn {
+    position: absolute;
+    width: 89px;
+    height: 54px;
+    color: white;
+    top: 0;
+    left: 101px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.box .diviser-btn {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 0;
+    left: 201px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.box .fois-btn {
+    position: absolute;
+    width: 89px;
+    height: 54px;
+    top: 0;
+    color: white;
+    left: 302px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.box .btn-1 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 78.5%;
+    left: 4.2%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-2 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 78.5%;
+    left: 27.5%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+
+
+.box .btn-3 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 78.5%;
+    left: 51%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+
+
+.box .btn-4 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 67.5%;
+    left: 4.1%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+
+.box .btn-5 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 67.5%;
+    left: 27.2%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-6 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 67.5%;
+    left: 51%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-7 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 56%;
+    left: 51%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-8 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 56%;
+    left: 27.2%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-9 {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 56%;
+    left: 4.1%;
+    border: none;
+    background-color: #414141;;
+    border-radius: 5px;
+}
+
+.box .btn-0 {
+    position: absolute;
+    width: 295px;
+    color: white;
+    height: 54px;
+    top: 89%;
+    left: 4.1%;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+.box .btn-moins {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 55.8%;
+    left: 321px;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+
+.box .btn-plus {
+    position: absolute;
+    width: 89px;
+    color: white;
+    height: 54px;
+    top: 67%;
+    left: 321px;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+
+.box .btn-result {
+    position: absolute;
+    width: 89px;
+    background-color: rgb(238, 154, 97);
+    color: white;
+    height: 120px;
+    top: 77.7%;
+    left: 321px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Inter-Bold", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box .btn-result:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+.box .close-btn {
+    border: none;
+    position: absolute;
+    width: 56px;
+    height: 54px;
+    top: 191px;
+    left: 355px;
+    background-color: #3c3b3b;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box .close-btn:hover {
+    background-color: #f44336; 
+    transform: scale(1.1);
+}
+
+.box .close-btn:active {
+    transform: scale(0.95); 
+}
